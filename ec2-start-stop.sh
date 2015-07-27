@@ -5,7 +5,7 @@
 # Lo script deve essere eseguito da una macchina diversa da quelle da spegnere/avviare,
 # in genere puo' essere un server di produzione che sta sempre acceso 24/7.
 #
-#
+# https://github.com/vpistis/ec2-start-stop
 
 AWS_CLI=/usr/local/bin/aws
 # Array degli id delle istance da gestire, esempio INSTANCE_IDS=(i-12345678 i-00000000 i-11111111)
