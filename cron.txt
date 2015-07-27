@@ -1,0 +1,10 @@
+#Example cron
+#
+
+AWS_CLI_LOG=~/aws-cli.log
+# Stop instances
+30 19 * * 1-5 ~/ec2-start-stop.sh stop-instances >> $AWS_CLI_LOG 2>&1
+# Start Instances
+30 8 * * 1-5 ~/ec2-start-stop.sh start-instances >> $AWS_CLI_LOG 2>&1
+# Associa ElasticIP to instances
+35 8 * * 1-5 ~/ec2-start-stop.sh associate-eip >> $AWS_CLI_LOG 2>&1
