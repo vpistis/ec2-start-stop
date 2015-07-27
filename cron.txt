@@ -1,5 +1,5 @@
-#Example cron
-#
+# Example cron
+# https://github.com/vpistis/ec2-start-stop
 
 AWS_CLI_LOG=~/aws-cli.log
 # Stop instances
