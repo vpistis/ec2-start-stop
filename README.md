@@ -1,7 +1,9 @@
 # ec2-start-stop
 Start and Stop AWS EC2 Instances from another always active Instance
 
-Tipicamente da usare per i server di sviluppo/test/stage che non devono stare sempre accesi.
+Use it for server development / test / stage that should not always be running.
 
-Installate aws-cli su un’altra istanza EC2 che deve stare sempre accesa 24 ore su 24, preparatevi uno script come questo ec2-start-stop.sh
-e mettetelo in cron, (crontab -e) su questa istanza sempre attiva, ad esempio usando il cron.txt
+1. Installe [aws-cli](https://aws.amazon.com/it/cli/) into another EC2 instance that is always running 24 hours on 24, write a script like this ec2-start-stop.sh.
+2. Put the script into cron (crontab -e) on this instance always active, for example using the [cron.txt](https://github.com/vpistis/ec2-start-stop/blob/master/cron.txt) provided.
+
+**ATTENTION**: always make a backup and test first using it!
